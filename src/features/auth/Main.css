@@ -62,6 +62,12 @@ a {
     margin: auto 20px auto 0;
 }
 
+.icon-Phone {
+    width: 20px;
+    padding-left: 3px;
+    
+}
+
 .font8-Home {
     font-size: 16px!important;
 }

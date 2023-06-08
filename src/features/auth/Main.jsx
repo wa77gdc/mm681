@@ -11,6 +11,7 @@ import {
   faQuestion,
   faThumbsUp,
   faGamepad,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -51,7 +52,11 @@ const Main = () => {
                       </Badge>{" "}
                       / သုံးစွဲသူအကောင့်
                     </div>
-                    <div className="font6-Home">Name: {userInfo ? (userInfo.name): ''} <br /> Telephone: {userInfo ? (userInfo.phone): ''}</div>
+                    <div className="font6-Home">Name : {userInfo ? (userInfo.name): ''} <br />
+                     <FontAwesomeIcon
+                      icon={faPhone}
+                      className="fa icon-user-Home icon-Phone"
+                    />    : {userInfo ? (userInfo.phone): ''}</div>
                   </div>
                 </div>
                 <div className="box-money-Home">
