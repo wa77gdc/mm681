@@ -21,8 +21,7 @@ import BottomNav from "../../components/BottomNav";
 import { useSelector } from "react-redux";
 
 const Main = () => {
-
-  const { userInfo } = useSelector((state)=> state.auth);
+  const { userInfo } = useSelector((state) => state.auth);
 
   return (
     <>
@@ -37,26 +36,31 @@ const Main = () => {
             <div className="flex-Home">
               <div>
                 <div className="wallet-icon-Home">
-                  <div className="icon-user-Home">
+                  <div className="font8-Home main-one">
+                    <Badge pill bg="success">
+                      บัญชีผู้ใช้{" "}
+                    </Badge>{" "}
+                    / သုံးစွဲသူအကောင့်
+                  </div>
+                  <br />
+                  <div className="second">
+
+                  
+                  
+                  <div className="main-three">
+                    <div className="font8-Home">
                     <FontAwesomeIcon
                       icon={faUserCircle}
                       className="fa icon-user-Home"
                     />
-                    {/* <i className="fa fa-user-circle icon-user-Home"></i> */}
-                  </div>
-                  &nbsp;
-                  <div className="">
-                    <div className="font8-Home">
-                      <Badge pill bg="success">
-                        บัญชีผู้ใช้{" "}
-                      </Badge>{" "}
-                      / သုံးစွဲသူအကောင့်
+                      {userInfo ? userInfo.name : ""} 
+                      <FontAwesomeIcon
+                        icon={faPhone}
+                        className="fa icon-user-Home icon-Phone"
+                      />{" "}
+                      {userInfo ? userInfo.phone : ""}
                     </div>
-                    <div className="font6-Home">Name : {userInfo ? (userInfo.name): ''} <br />
-                     <FontAwesomeIcon
-                      icon={faPhone}
-                      className="fa icon-user-Home icon-Phone"
-                    />    : {userInfo ? (userInfo.phone): ''}</div>
+                  </div>
                   </div>
                 </div>
                 <div className="box-money-Home">
