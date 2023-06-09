@@ -144,7 +144,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div style={{ height: "300px" }}></div>
+        <div style={{ height: "350px" }}></div>
         <div>
           <div className="title-Home">
             <div className="font-title-Home">
