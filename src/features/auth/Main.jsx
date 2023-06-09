@@ -20,6 +20,8 @@ import "./Main.css";
 import BottomNav from "../../components/BottomNav";
 import { useSelector } from "react-redux";
 
+const style ={ color: "#198754" }
+
 const Main = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
@@ -52,11 +54,13 @@ const Main = () => {
                     <FontAwesomeIcon
                       icon={faUserCircle}
                       className="fa icon-user-Home"
+                      style={style}
                     />
                       {userInfo ? userInfo.name : ""} 
                       <FontAwesomeIcon
                         icon={faPhone}
                         className="fa icon-user-Home icon-Phone"
+                        style={style}
                       />{" "}
                       {userInfo ? userInfo.phone : ""}
                     </div>
