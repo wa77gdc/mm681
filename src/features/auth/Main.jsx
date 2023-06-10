@@ -50,19 +50,20 @@ const Main = () => {
                   
                   
                   <div className="main-three">
-                    <div className="font8-Home">
+                    <div className="font8-Home icon-User">
                     <FontAwesomeIcon
                       icon={faUserCircle}
                       className="fa icon-user-Home"
                       style={style}
                     />
-                      {userInfo ? userInfo.name : ""} 
+                    </div>
+                    <div className="font8-Home">
+                      Name : {userInfo ? userInfo.name : ""} 
                       <FontAwesomeIcon
                         icon={faPhone}
                         className="fa icon-user-Home icon-Phone"
                         style={style}
-                      />{" "}
-                      {userInfo ? userInfo.phone : ""}
+                      />{" "}: {userInfo ? userInfo.phone : ""}
                     </div>
                   </div>
                   </div>
@@ -144,7 +145,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div style={{ height: "350px" }}></div>
+        <div style={{ height: "400px" }}></div>
         <div>
           <div className="title-Home">
             <div className="font-title-Home">

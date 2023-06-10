@@ -60,13 +60,17 @@ a {
 .icon-user-Home {
     width: 32px;
     font-size: 35px;
-    margin: auto 20px auto 0;
+    margin: auto 10px auto 0;
 }
 
 .icon-Phone {
     width: 20px;
     padding-left: 20px;
     
+}
+
+.icon-User {
+    padding-left: 25px;
 }
 
 .font8-Home {
