@@ -60,7 +60,7 @@ a {
 .icon-user-Home {
     width: 32px;
     font-size: 35px;
-    margin: auto 10px auto 0;
+    margin: auto 2px auto 0;
 }
 
 .icon-Phone {
@@ -70,7 +70,7 @@ a {
 }
 
 .icon-User {
-    padding-left: 25px;
+    padding-left: 0px;
 }
 
 .font8-Home {
