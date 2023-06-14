@@ -102,7 +102,7 @@ const Login = () => {
               </div>
             </Link>
             <div className="flex1-login"></div>
-            <a href="https://line.me/ti/p/~warut77" className="text-dec">
+            <a href="https://line.me/ti/p/%40419gtumj" className="text-dec">
               <div className="green-login">
                 <Badge pill bg="success" className="green-login1">
                   ติดต่อเรา
