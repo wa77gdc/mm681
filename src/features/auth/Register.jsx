@@ -1,7 +1,7 @@
 import logomm68 from "../../images/logomm68.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faPhone, faUnlock, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faUnlock, faUser, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { Link,  useNavigate  } from "react-router-dom";
 import { Badge } from "react-bootstrap";
 import { useState, useEffect } from "react";
@@ -15,6 +15,7 @@ const Register = () => {
     const [ phone, setPhone ] = useState('');
     const [ password, setPassword ] = useState('');
     const [ confirmPassword, setConfirmPassword ] = useState('');
+    const [ suggester, setSuggester ] = useState('');
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const Register = () => {
 
     useEffect(() => {
       if (userInfo) {
-        navigate('/main');
+        navigate('/login');
       }
     },[navigate, userInfo]);
 
@@ -35,9 +36,9 @@ const Register = () => {
           toast.error('Password do not match')
         } else {
           try {
-            const res = await register({name, phone, password }).unwrap();
+            const res = await register({name, phone, suggester, password }).unwrap();
             dispatch(setCredentials({...res}))
-            navigate('/');
+            navigate('/login');
           } catch (err) {
             toast.error(err?.data?.message || err.error);
           }
@@ -86,6 +87,16 @@ const Register = () => {
                 placeholder="Enter Phone"
                 value={phone}
                 onChange={(e)=> setPhone(e.target.value)}
+                />
+            </div>
+            <div className="box-login">
+                <FontAwesomeIcon icon={faUserGroup} className="icon-login" />
+                <input 
+                type="tel" 
+                className="input-login" 
+                placeholder="Enter Suggester Phone Number ( NOt require ) "
+                value={suggester}
+                onChange={(e)=> setSuggester(e.target.value)}
                 />
             </div>
             <div className="box-login">

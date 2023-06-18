@@ -66,6 +66,8 @@ body {
   text-align: left;
   margin-left: 5px;
   font-size: 20px;
+  cursor: pointer;
+  width: 100px;
 }
 
 .margin5-header {
@@ -80,6 +82,7 @@ body {
   color: #fff;
   width: 44px;
   float: right;
+  cursor: pointer;
 }
 
 .banner {
