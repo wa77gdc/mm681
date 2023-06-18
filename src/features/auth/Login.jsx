@@ -19,14 +19,14 @@ const Login = () => {
 
   const [login] = useLoginMutation();
 
-  // const { userInfo } = useSelector((state) => state.auth);
+  const { userInfo } = useSelector((state) => state.auth);
 
 
-  // useEffect(() => {
-  //   if (userInfo) {
-  //     navigate('/main');
-  //   }
-  // },[navigate, userInfo]);
+  useEffect(() => {
+    if (userInfo) {
+      navigate('/main');
+    }
+  },[navigate, userInfo]);
 
   const submitHandler = async (e) => {
     e.preventDefault();
