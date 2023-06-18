@@ -94,7 +94,7 @@ const Register = () => {
                 <input 
                 type="tel" 
                 className="input-login" 
-                placeholder="Enter Suggester Phone Number ( NOt require ) "
+                placeholder="Suggester Phone Number"
                 value={suggester}
                 onChange={(e)=> setSuggester(e.target.value)}
                 />
