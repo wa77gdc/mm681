@@ -11,6 +11,10 @@ import Layout from './components/Layout.jsx'
 
 import 'react-toastify/dist/ReactToastify.css'
 import ForgetPassword from './features/auth/ForgetPassword.jsx';
+import Profile from './features/user/Profile.jsx';
+import EditProfile from './features/user/EditProfile.jsx';
+import Contact from './features/page/Contact.jsx';
+
 
 
 const App = () => {
@@ -24,6 +28,9 @@ const App = () => {
       {/* Private Routes */}
       <Route path='' element={<PrivateRoute />} >
         <Route path='/main' element={<Main />} />
+        <Route path='/profile' element={<Profile /> } />
+        <Route path='/editprofile' element={<EditProfile />} />
+        <Route path='/contact' element={<Contact />} />
       </Route>
     </Route>
     </Routes>

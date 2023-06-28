@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
 
-.App {
-  /* text-align: center; */
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -22,6 +18,12 @@ body {
   /* min-height: 100vh;
   margin: 0px auto; */
   /* position: relative; */
+}
+
+body, html , p ,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Prompt', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {

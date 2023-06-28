@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom";
 
 import { Badge } from "react-bootstrap";
-import "./Main.css";
+import "../../css/Main.css";
 import BottomNav from "../../components/BottomNav";
 import { useSelector } from "react-redux";
 
