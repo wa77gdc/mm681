@@ -1,17 +1,43 @@
-import React from 'react'
-import { Form } from 'react-bootstrap'
+import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const EditProfile = () => {
-  return (
+    const [name, setName]  = useState('');
+    const [suggester, setSuggester] = useState('');
 
-    <Form>
-    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-      <Form.Label>Name</Form.Label>
-      <Form.Control type="text" placeholder="name" />
-    </Form.Group>
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+
     
-  </Form>
-  )
-}
 
-export default EditProfile
+    const { userInfo } = useSelector((state) => state.auth);
+  return (
+    <Form>
+      <Form.Group className="mb-3" controlId="name">
+        <Form.Label>Name</Form.Label>
+        <Form.Control 
+          type="name"  
+          placeholder="Enter name"
+          value={name} 
+          onChange={(e) => setName(e.target.value)}
+        />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="suggester">
+        <Form.Label>Suggester</Form.Label>
+        <Form.Control 
+          type="suggester" 
+          placeholder="suggester" 
+          value={suggester}
+          onChange={(e)=> setSuggester(e.target.value)}
+        />
+      </Form.Group>
+      <Button type="submit" variant="primary" className="mt-3">
+        Update
+      </Button>
+    </Form>
+  );
+};
+
+export default EditProfile;

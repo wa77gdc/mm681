@@ -14,6 +14,7 @@ import ForgetPassword from './features/auth/ForgetPassword.jsx';
 import Profile from './features/user/Profile.jsx';
 import EditProfile from './features/user/EditProfile.jsx';
 import Contact from './features/page/Contact.jsx';
+import ListLotto from './features/page/ListLotto.jsx';
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/profile' element={<Profile /> } />
         <Route path='/editprofile' element={<EditProfile />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/listlotto' element={<ListLotto />} />
       </Route>
     </Route>
     </Routes>
