@@ -119,7 +119,7 @@ function ListLotto() {
                       <img alt="" className="flag-karean" src={ppf12} />
                     </div>
                     <div className="title-lotto">
-                      HUAY <br /> GOLD WING
+                      HUAY GOLD WING
                       <div className="subtitle-lotto">01/01/2566</div>
                     </div>
                   </div>
@@ -158,8 +158,8 @@ function ListLotto() {
                       <img alt="" className="flag-karean" src={ppf13} />
                     </div>
                     <div className="title-lotto">
-                      HUAY STAR
-                      <div className="subtitle-lotto">01/01/2566</div>
+                      HUAY STAR 
+                      <div className="subtitle-lotto"><br />01/01/2566</div>
                     </div>
                   </div>
                   <div className="box-countdown-lotto">
@@ -197,7 +197,7 @@ function ListLotto() {
                     </div>
                     <div className="title-lotto">
                       HUAY CROWN
-                      <div className="subtitle-lotto">01/01/2566</div>
+                      <div className="subtitle-lotto"><br />01/01/2566</div>
                     </div>
                   </div>
                   <div className="box-countdown-lotto">
@@ -235,7 +235,7 @@ function ListLotto() {
                     </div>
                     <div className="title-lotto">
                       HUAY KAREN
-                      <div className="subtitle-lotto">01/01/2566</div>
+                      <div className="subtitle-lotto"><br />01/01/2566</div>
                     </div>
                   </div>
                   <div className="box-countdown-lotto">

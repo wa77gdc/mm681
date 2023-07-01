@@ -51,6 +51,11 @@ a {
     cursor: pointer;
 }
 
+.font16 {
+    font-size: 16px !important;
+    font-weight: 300 !important;
+}
+
 .wallet-icon-Home {
     display: -webkit-flex;
     display: flex;

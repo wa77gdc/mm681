@@ -14,7 +14,6 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-
 import { Badge } from "react-bootstrap";
 import "../../css/Main.css";
 import BottomNav from "../../components/BottomNav";
